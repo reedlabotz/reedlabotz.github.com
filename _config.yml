@@ -1,0 +1,25 @@
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+
+sitename:  Reed La Botz
+tagline: 
+
+production_url : http://reedlabotz.com
+url: http://reedlabotz.com
+
+safe:        false
+auto:        false
+baseurl:    /
+
+
+future:      false
+pygments:    true
+markdown:    maruku
+permalink:   /blog/:year/:month/:day/:title/
+
+
+
+
+navigation:
+- text: Home
+  url: /
+  layout: default  
