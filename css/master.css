@@ -45,54 +45,91 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Profile style */
-/* http://www.sitepoint.com/pure-css3-paper-curl/ */
 .profile
 {
-   position: relative;
+   margin: 20px 5% 20px 5%;
    width: 90%;
-   padding: 5px;
-   margin: 0 auto;
-   /* for firefox, safari, chrome, etc. */
    -webkit-transform: rotate(-1.5deg);
    -moz-transform: rotate(-1.5deg);
-   margin-bottom: 15px;
-
-
 }
+
 
 .profile img{
-   -moz-box-shadow: 0 0 5px #888;
-   -webkit-box-shadow: 0 0 5px#888;
-   box-shadow: 0 0 5px #888;
+   -moz-box-shadow: 0 0 2px #888;
+   -webkit-box-shadow: 0 0 2px#888;
+   box-shadow: 0 0 2px #888;
    background: #888;
 }
+/* Shared styles */
 
-.profile:before, .profile:after
-{
-   position: absolute;
-   width: 40%;
-   height: 10px;
-   content: ' ';
-   left: 12px;
-   bottom: 12px;
-   background: transparent;
-   -webkit-transform: skew(-5deg) rotate(-5deg);
-   -moz-transform: skew(-5deg) rotate(-5deg);
-   -ms-transform: skew(-5deg) rotate(-5deg);
-   -o-transform: skew(-5deg) rotate(-5deg);
-   transform: skew(-5deg) rotate(-5deg);
-   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
-   -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
-   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
-   z-index: -1;
+
+.profile > :first-child:before {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   background:#fff;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.profile:after
-{
-   left: auto;
-   right: 12px;
-   -webkit-transform: skew(5deg) rotate(5deg);
-   -moz-transform: skew(5deg) rotate(5deg);
-   -ms-transform: skew(5deg) rotate(5deg);
-   -o-transform: skew(5deg) rotate(5deg);
-   transform: skew(5deg) rotate(5deg);
+
+.profile{
+   position:relative;
+   float:left;
+   background:#fff;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
+.profile:before,
+.profile:after {
+   content:"";
+   position:absolute;
+   z-index:-2;
+}
+
+.profile p {
+   font-size:16px;
+   font-weight:bold;
+}
+
+/* Lifted corners */
+
+.profile {
+   -moz-border-radius:4px;
+        border-radius:4px;
+}
+
+.profile:before,
+.profile:after {
+   bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+   max-width:300px;
+   max-height:100px;
+   -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+           box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -webkit-transform:rotate(-3deg);
+      -moz-transform:rotate(-3deg);
+       -ms-transform:rotate(-3deg);
+        -o-transform:rotate(-3deg);
+           transform:rotate(-3deg);
+}
+
+.profile:after {
+   right:10px;
+   left:auto;
+   -webkit-transform:rotate(3deg);
+      -moz-transform:rotate(3deg);
+       -ms-transform:rotate(3deg);
+        -o-transform:rotate(3deg);
+           transform:rotate(3deg);
+}
+
