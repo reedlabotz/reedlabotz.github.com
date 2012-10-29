@@ -53,6 +53,18 @@ h1, h2, h3, h4, h5, h6{
    -moz-transform: rotate(-1.5deg);
 }
 
+.profile:hover .profile-hover{
+  display: block;
+}
+
+.profile:hover .profile-start{
+  display: none;
+}
+
+.profile-hover{
+  display: none;
+}
+
 
 .profile img{
    -moz-box-shadow: 0 0 2px #888;
