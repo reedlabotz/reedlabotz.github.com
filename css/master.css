@@ -16,10 +16,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .content-box{
-   padding: 10px;
    -webkit-border-radius:2px;
    -moz-border-radius:2px;
    border-radius:2px;
+
+   margin-left: -5%;
+   margin-right: -5%;
+   padding: 15px 5%;
 }
 
 .content-box h4{
