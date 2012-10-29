@@ -1,18 +1,98 @@
 body{
    background: url('../img/groovepaper.png');
-   margin: 15px;
+   padding: 15px;
+   font-size: 18px;
+   line-height: 24px;
+   border-top: 3px solid #08C;
+}
+
+h1, h2, h3, h4, h5, h6{
    font-family: 'Antic', sans-serif;
-   font-size: 24px;
-   line-height:40px;
 }
 
-.container.white {
-   background: #ffffff;
+.main{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.content-box{
    padding: 10px;
-   border: 1px solid #efefef;
-   margin: 15px auto;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
 }
 
-.name{
-   color: #764ae4;
+.content-box h4{
+   color: #08C;
+   margin-top: 24px;
+   margin-bottom: 5px;
+}
+
+.content-box h4:first-child{
+   margin-top: 0;
+}
+
+.sidebar{
+   font-family: 'Antic', sans-serif;
+   font-size: 18px;
+   line-height: 24px;
+   margin-bottom: 40px;
+}
+
+.contact-info{
+   margin-left: 10%;
+   margin-right: 0;
+}
+
+/* Profile style */
+/* http://www.sitepoint.com/pure-css3-paper-curl/ */
+.profile
+{
+   position: relative;
+   width: 90%;
+   padding: 5px;
+   margin: 0 auto;
+   /* for firefox, safari, chrome, etc. */
+   -webkit-transform: rotate(-1.5deg);
+   -moz-transform: rotate(-1.5deg);
+   margin-bottom: 15px;
+
+
+}
+
+.profile img{
+   -moz-box-shadow: 0 0 5px #888;
+   -webkit-box-shadow: 0 0 5px#888;
+   box-shadow: 0 0 5px #888;
+   background: #888;
+}
+
+.profile:before, .profile:after
+{
+   position: absolute;
+   width: 40%;
+   height: 10px;
+   content: ' ';
+   left: 12px;
+   bottom: 12px;
+   background: transparent;
+   -webkit-transform: skew(-5deg) rotate(-5deg);
+   -moz-transform: skew(-5deg) rotate(-5deg);
+   -ms-transform: skew(-5deg) rotate(-5deg);
+   -o-transform: skew(-5deg) rotate(-5deg);
+   transform: skew(-5deg) rotate(-5deg);
+   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+   -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+   z-index: -1;
+}
+.profile:after
+{
+   left: auto;
+   right: 12px;
+   -webkit-transform: skew(5deg) rotate(5deg);
+   -moz-transform: skew(5deg) rotate(5deg);
+   -ms-transform: skew(5deg) rotate(5deg);
+   -o-transform: skew(5deg) rotate(5deg);
+   transform: skew(5deg) rotate(5deg);
 }
