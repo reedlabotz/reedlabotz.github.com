@@ -156,3 +156,19 @@ h1, h2, h3, h4, h5, h6{
            transform:rotate(3deg);
 }
 
+
+
+@media print
+  {
+  .sidebar {display: none;}
+
+  .well{
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow:none;
+  }
+}
+
+
+
