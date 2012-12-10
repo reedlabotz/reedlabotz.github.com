@@ -2,8 +2,12 @@ body{
    background: url('../img/groovepaper.png');
    padding: 15px;
    font-size: 18px;
-   line-height: 24px;
+   line-height: 32px;
    border-top: 3px solid #08C;
+}
+
+li {
+  line-height: 32px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -29,6 +33,10 @@ h1, h2, h3, h4, h5, h6{
    color: #08C;
    margin-top: 24px;
    margin-bottom: 5px;
+}
+
+.content-box.writing h4{
+  color: #000;
 }
 
 .content-box h4:first-child{
